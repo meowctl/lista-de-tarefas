@@ -1,15 +1,15 @@
-function ListaDeTarefas () {
-    
-    const tarefas = ["tarefa 1", "tarefa 2", "tarefa 3"];
+import "./css/ListaDeTarefas.css"
 
+function ListaDeTarefas(props) {
     return (
-        <ListaDeTarefas>
-            {
-                tarefas.map((t) => {
-                    {t}
-                })
-            }
-        </ListaDeTarefas>
+        <div className="lista">
+            <div id="titulo">
+                <h2>Lista de tarefas</h2>
+            </div>
+            <ul>
+                {props.children}
+            </ul>
+        </div>
     )
 }
 

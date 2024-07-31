@@ -1,10 +1,6 @@
-// import ListaDeTarefas from "./ListaDeTarefas";
-
-function Tarefa ({ tarefas }) {
+function Tarefa(props) {
     return (
-        <div>
-            <li>{tarefas}</li>
-        </div>
+        <li>{props.tarefa}</li>
     )
 }
 

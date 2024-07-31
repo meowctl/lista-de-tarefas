@@ -1,0 +1,27 @@
+.lista {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    border: 5px solid #ccc !important;
+    border-radius: 15px;
+}
+
+.lista #titulo {
+    width: 100%;
+    margin: 5px 50px 5px;
+    border-bottom: solid;
+}
+
+.lista #titulo h2 {
+    margin: 0;
+}
+
+.lista ul {
+    padding: 0;
+}
+
+.lista ul li {
+    list-style-type: none;
+}
