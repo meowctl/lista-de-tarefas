@@ -3,13 +3,12 @@ import Tarefa from './components/Tarefa';
 import ListaDeTarefas from './components/ListaDeTarefas';
 
 function App() {
+  let tarefas=["tarefa 1", "tarefa 2", "tarefa 3"];
 
   return (
     <>
       <ListaDeTarefas>
-        <Tarefa tarefa="teste" />
-        <Tarefa tarefa="teste" />
-        <Tarefa tarefa="teste" />
+        {tarefas.map((tarefa, i) => <Tarefa key={i} tarefa={tarefa}></Tarefa>)}
       </ListaDeTarefas>
     </>
   )
