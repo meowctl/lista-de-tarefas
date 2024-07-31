@@ -1,0 +1,9 @@
+.ball{
+    border-radius: 50%;
+    background: #f4f4f4;
+    display: inline;
+}
+
+li{
+    display: inline;
+}
